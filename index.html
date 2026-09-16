@@ -533,6 +533,37 @@ states['collection::story']={
     'voteBox':{x:0,y:0,s:100,r:0,z:42}
   }
 };
+/* Emplacement figé le 2026-09-16 : Atelier 3 — Meilleur drop / Story (3 cartes), capturé depuis l'éditeur. */
+states['best-drop-v2::story']={
+  title:{x:0.11328125,y:25.403101653797997,s:100,r:0,z:25},
+  subtitle:{x:14.5,y:13.3735492096202,s:111.64279513888889,r:0,z:25},
+  series:{x:-363.69140625,y:6.012822738418198,s:100,r:0,z:25},
+  items:{
+    'title':{x:0.11328125,y:25.403101653797997,s:100,r:0,z:25},
+    'subtitle':{x:14.5,y:13.3735492096202,s:111.64279513888889,r:0,z:25},
+    'series':{x:-363.69140625,y:6.012822738418198,s:100,r:0,z:25},
+    'logo':{x:13.67578125,y:0.15627869365609293,s:100,r:0,z:30},
+    'product-0':{x:0,y:0,s:100,r:0,z:'auto'},
+    'product-1':{x:0,y:0,s:100,r:0,z:'auto'},
+    'product-2':{x:0,y:0,s:100,r:0,z:'auto'},
+    'product-3':{x:0,y:0,s:100,r:0,z:'auto'},
+    'product-4':{x:0,y:0,s:100,r:0,z:'auto'},
+    'product-5':{x:0,y:0,s:100,r:0,z:'auto'},
+    'live-card-0':{x:-7.78515625,y:-3.2857595341193657,s:152.5771339793264,r:0,z:'auto'},
+    'live-card-1':{x:0.9296875,y:-21.80869169970785,s:153.10732184516058,r:0,z:'auto'},
+    'live-card-2':{x:8.6640625,y:-1.6682750547787981,s:154.10214696278788,r:0,z:'auto'},
+    'live-person':{x:0,y:0,s:100,r:0,z:89},
+    'voggt':{x:-41.265625,y:-2.6176681187395663,s:100,r:0,z:100},
+    'recap-divider':{x:0,y:0,s:100,r:0,z:27},
+    'tree':{x:0,y:0,s:100,r:0,z:8},
+    'tree-card-0':{x:0,y:0,s:100,r:0,z:'auto'},
+    'tree-card-1':{x:0,y:0,s:100,r:0,z:'auto'},
+    'tree-card-2':{x:0,y:0,s:100,r:0,z:'auto'},
+    'duel-flip':{x:0,y:0,s:100,r:0,z:'auto'},
+    'stats':{x:0,y:0,s:100,r:0,z:28},
+    'voteBox':{x:0,y:0,s:100,r:0,z:42}
+  }
+};
 const cloneLayout=value=>JSON.parse(JSON.stringify(value));function seedLiveLayouts(format,sourceKey){const source=states[sourceKey];if(!source)return;for(let count=1;count<=5;count++){const target='live::'+format+'::'+count;if(!states[target])states[target]=cloneLayout(source)}}seedLiveLayouts('story','live::story');seedLiveLayouts('post','live::post');seedLiveLayouts('thumb-voggt','live::thumb-voggt');seedLiveLayouts('banner-web','live::banner-web::4');seedLiveLayouts('banner-mobile','live::banner-mobile::4');
 Object.assign(states['live::banner-mobile::3'],{
   title:{x:-92.5390625,y:89.046875,s:140.3485639784071,r:0,z:25},
